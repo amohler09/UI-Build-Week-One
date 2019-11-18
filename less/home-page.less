@@ -1,0 +1,225 @@
+.home {
+
+  .main-section{
+    padding-bottom: 1%;
+    .border();
+
+    @media @phone{
+      border: none;
+    
+    }//ends @media
+
+    h2{
+
+      padding-top: 3%;
+
+      @media @phone{
+        font-size: @media-header;
+        .mediaStyle();
+      
+      }//ends @media
+    }//ends h2  
+
+    p{
+      @media @phone{
+        font-size: @media-p;
+        .mediaStyle();
+      
+      }//ends @media
+    }//ends p
+
+      .bus{
+      
+        @media @phone{
+          .mediaStyle();
+
+        }//ends @media
+      }// ends .bus
+
+  }//ends .main-section
+  
+    .content-section {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+     
+      @media @phone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .mediaStyle();
+      
+      }//ends @media 
+     
+      .text-content {
+        width: 48%;
+        padding-right: 1%;
+
+        @media @phone{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border-top: 1.25px dashed @navigation-border;
+          padding-top: 5%;
+        
+        }//ends @media
+      }//ends .text-content
+       
+        h2{
+          @media @phone{
+            font-size: @media-header;
+          
+          }//ends@media
+        }//ends h2
+
+        p{
+          @media @phone{
+            font-size: @media-p;
+         
+          }//ends@media
+        }//ends p
+
+      .img-content {
+        width: 48%;
+        padding-left: 1%;
+
+        @media @phone{
+          width: 100%;
+        }
+
+        img {
+          border-radius: 10px;
+
+          @media @phone{
+            display: block;
+            max-width: 100%;
+          }
+          
+        }//ends img
+      }//ends img.content
+    }//ends content-section
+
+    .inverse-content {
+      padding-bottom: 30px;
+      .border();
+
+      @media @phone{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .media-border();
+      }//ends @media
+
+      .text-content {
+        padding-left: 1%;
+        padding-right: 0;
+        
+      }//ends .text-content
+
+      .img-content {
+        padding-right: 1%;
+        padding-left: 0;
+
+        @media @phone{
+          width: 100%;
+        }
+
+      }//ends .img-content
+    }//ends inverse-content
+
+    .content-destination {
+      width: 75%;
+      margin: 0 auto 30px;
+
+      @media @phone{
+        .mediaStyle();
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .media-border();
+
+      }//ends @media
+
+      h2{
+        @media @phone{
+          font-size: @media-header;
+        }//ends@media
+      }//ends h1
+
+      p{
+        @media @phone{
+          font-size: @media-p;
+        }//ends@media
+      }//ends h1
+      
+    }//ends .content-destination
+
+      .boat {
+        border-radius: 10px;
+
+        @media @phone{
+          padding-bottom: 3%;
+        }
+        
+        
+      }//ends .boat
+  
+    .content-pick {
+      padding-top: 30px;  
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px dashed @navigation-border;
+
+      @media @phone{
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        margin: auto 20%;
+        align-items: center;
+        border: none;
+        
+
+        h4{
+          @media @phone{
+            font-size: 2rem;
+          }//ends@media
+        }//ends h1
+  
+        p{
+          @media @phone{
+            font-size: @media-p;
+          }//ends@media
+        }//ends h1
+      
+      }//ends @media
+
+      .destination {
+        width: 30%;
+        margin-bottom: 30px;
+
+        @media @phone{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        
+        }//ends @media
+
+        .btn{
+          .custom-btn(@home-button, 90%, @white, 20%);
+
+          @media @phone{
+            padding: 3%;
+            width: 90%;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            background-color: @eastern-blue;
+
+          }//ends @media
+
+        }//ends .btn
+      }//ends .destination
+    }//ends .content-pick
+  }// home
